@@ -1,10 +1,11 @@
 # maizey-tools
-These tools were developed for Pascal, the Project Pal, a chatbot for the U-M PMO. They consist of:
+These are some tools to enhance Maizey's base functionality.
 
-1. A simple recursive web scraper configured to be compatible with Duo authentication.
-2. An HTML parser to extract text and enrich it using an LLM.
+1. **scraper.ipynb** - A simple recursive web scraper configured to be compatible with Duo authentication.
+2. **enricher.ipynb** - An HTML parser to extract text and enrich it using an LLM.
+3. **sheets.gs** - A Google Apps Script to add a `MAIZEY` function to Google Sheets.
 
-Both tools are designed to be supplementary to Maizey, a [RAG service](https://its.umich.edu/computing/ai/maizey-in-depth) provided and maintained by U-M ITS. Most users will not require either tool as the [July 18th release](https://its.umich.edu/computing/ai/release-notes) covers several features these tools were designed to accomplish. However, if you are not satisfied with Maizey's performance, it may be worth looking at these tools.
+All tools are designed to be supplementary to Maizey, a [RAG service](https://its.umich.edu/computing/ai/maizey-in-depth) provided and maintained by U-M ITS. Most users will not require any of these tools as the [July 18th release](https://its.umich.edu/computing/ai/release-notes) covers several features these tools were designed to accomplish. However, if you are not satisfied with Maizey's performance, it may be worth looking at these tools.
 
 # scraper.ipynb
 This Jupyter Notebook uses Selenium to recursively follow unique <a> tags and download their HTML. It also provides a basic authentication flow to get past Duo, as many Umich sites are locked behind it. This can be disabled.
