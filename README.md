@@ -15,4 +15,4 @@ There are still a few reasons one might use this scraper:
 2. To gain more granular control over Maizey's data sources. As a user, Maizey's loaders are a black box; you don't know how webpages are being processed, and therefore don't know whether it will have access to the correct data or is being diluted by bad data. You can use this scraper to take control of the process. You can even modify documents after scraping to enhance results.
 
 # enricher.ipynb
-This Jupyter Notebook uses U-M GPT Toolkit and BeautifulSoup to parse and enhance HTML files.
+This Jupyter Notebook uses U-M GPT Toolkit and BeautifulSoup to parse and enhance HTML files. However, you can also configure it to use Maizey's API instead of GPT Toolkit. It extracts all propositions from a document and provides a summary at the end in order to increase the likelihood of a retrieval hit. In addition, the BS4 parser formats links so that Maizey can use them as part of its response (the default loader does not do this).
