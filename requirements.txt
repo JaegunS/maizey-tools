@@ -1,0 +1,5 @@
+ipykernel
+openai
+python-dotenv
+beautifulsoup4
+selenium
